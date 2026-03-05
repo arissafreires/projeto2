@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- Esta tag é muito importante para o site funcionar no celular (design responsivo) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuro Sustentável</title>
+    <!-- Aqui vamos conectar o CSS (estilos) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO / MENU -->
+    <header>
+        <div class="logo">🌱 Futuro Verde</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#solucoes">Soluções</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL DO SITE -->
+    <main>
+
+        <!-- PÁGINA 1 DO SLIDE: Seção Início -->
+        <section id="inicio" class="section-inicio">
+            <div class="container">
+                <h1>Construindo um Futuro Sustentável</h1>
+                <p>Pequenas atitudes, grandes mudanças. Vamos transformar o amanhã com escolhas inteligentes hoje.</p>
+                <a href="#solucoes" class="botao">Conheça as soluções</a>
+            </div>
+        </section>
+
+        <!-- PÁGINA 2 DO SLIDE: Seção Sobre / Problema -->
+        <section id="sobre" class="section-sobre">
+            <div class="container">
+                <h2>O Desafio do Nosso Tempo</h2>
+                <!-- Usando bullets points como nos slides -->
+                <ul class="lista-bullets">
+                    <li>🌍 Mudanças climáticas aceleradas</li>
+                    <li>♻️ Consumo excessivo de plástico</li>
+                    <li>💧 Escassez de recursos hídricos</li>
+                    <li>🌳 Desmatamento e perda de biodiversidade</li>
+                </ul>
+                <p class="destaque">Mas a boa notícia é que podemos reverter isso!</p>
+            </div>
+        </section>
+
+        <!-- PÁGINAS 3 a 10 DO SLIDE: Cards de Soluções -->
+        <!-- Vamos representar 8 soluções em cards, que seriam as páginas 3 a 10 -->
+        <section id="solucoes" class="section-solucoes">
+            <div class="container">
+                <h2>Soluções Sustentáveis</h2>
+                <p class="subtitulo">Clique nos cards para ver uma mensagem secreta!</p>
+                <div class="grid-cards">
+                    
+                    <!-- Card 1 (Slide 3) -->
+                    <div class="card" onclick="mostrarMensagem(this, 'Energia limpa reduz emissão de CO2!')">
+                        <h3>Energia Solar</h3>
+                        <p>Painéis fotovoltaicos para gerar sua própria eletricidade.</p>
+                    </div>
+
+                    <!-- Card 2 (Slide 4) -->
+                    <div class="card" onclick="mostrarMensagem(this, 'A compostagem vira adubo para plantas!')">
+                        <h3>Compostagem</h3>
+                        <p>Transforme restos de comida em adubo para hortas.</p>
+                    </div>
+
+                    <!-- Card 3 (Slide 5) -->
+                    <div class="card" onclick="mostrarMensagem(this, 'Coleta seletiva é o primeiro passo!')">
+                        <h3>Reciclagem</h3>
+                        <p>Separe o lixo e dê nova vida aos materiais.</p>
+                    </div>
+
+                    <!-- Card 4 (Slide 6) -->
+                    <div class="card" onclick="mostrarMensagem(this, 'Reutilizar evita desperdício!')">
+                        <h3>Upcycling</h3>
+                        <p>Transforme roupas velhas em novas peças de roupa.</p>
+                    </div>
+
+                    <!-- Card 5 (Slide 7) -->
+                    <div class="card" onclick="mostrarMensagem(this, 'Carros elétricos não emitem poluentes!')">
+                        <h3>Mobilidade Verde</h3>
+                        <p>Bicicletas, patinetes e carros elétricos.</p>
+                    </div>
+
+                    <!-- Card 6 (Slide 8) -->
+                    <div class="card" onclick="mostrarMensagem(this, 'Agroecologia preserva o solo!')">
+                        <h3>Agricultura Sustentável</h3>
+                        <p>Cultivo sem agrotóxicos e respeitando a natureza.</p>
+                    </div>
+
+                    <!-- Card 7 (Slide 9) -->
+                    <div class="card" onclick="mostrarMensagem(this, 'Produtos duráveis geram menos lixo!')">
+                        <h3>Consumo Consciente</h3>
+                        <p>Compre menos, escolha bem e prefira produtos duráveis.</p>
+                    </div>
+
+                    <!-- Card 8 (Slide 10) -->
+                    <div class="card" onclick="mostrarMensagem(this, 'Educação é a base da mudança!')">
+                        <h3>Educação Ambiental</h3>
+                        <p>Compartilhe conhecimento e inspire outras pessoas.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PÁGINA 11 DO SLIDE: Seção Contato / Chamada para Ação -->
+        <section id="contato" class="section-contato">
+            <div class="container">
+                <h2>Faça Parte Dessa Mudança</h2>
+                <p>Quer saber mais? Deixe seu e-mail para receber dicas sustentáveis.</p>
+                <form id="form-contato" onsubmit="enviarFormulario(event)">
+                    <input type="email" placeholder="Digite seu e-mail" required>
+                    <button type="submit">Inscrever-se</button>
+                </form>
+                <p id="mensagem-agradecimento" class="mensagem-oculta"></p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>🌍 Trabalho Escolar - 2º Ano Ensino Médio | Futuro Sustentável</p>
+    </footer>
+
+    <!-- Aqui vamos conectar o JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
